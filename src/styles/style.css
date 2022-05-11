@@ -1,0 +1,258 @@
+body {
+    background: #F9F9F9;
+}
+
+#blueBox {
+    background-color: #6495ED;
+    width: 455px;
+    height: 430px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #FFFFFF;
+}
+
+#login {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #FFFFFF;
+}
+
+.inputs {
+    padding-left: 9px;
+    font-size: 13px;
+    width: 240px;
+    height: 42px;
+    margin-bottom: 19px;
+    background-color: #F3F3F3;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.inputs::placeholder {
+    color: #5F5C5C; 
+}
+
+.logSomehow {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EDBC64;
+    font-size: 18px;
+    line-height: 21.94px;
+    font-weight: 400;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#alrReg {
+    color:white;
+    text-decoration: none;
+}
+
+header {
+    background-color: #6495ED;
+    display:flex;
+    justify-content: space-between;
+    height: 62px;
+    min-width: 100%;
+}
+
+#profileData {
+    display:flex
+}
+
+#userPfpMain {
+    width: 48px;
+    height: 45px;
+    margin: 7px 0 0 14px;
+    border-radius: 100px;
+}
+
+#userNickMain {
+    margin: auto;
+    margin-left: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white
+}
+
+#logoutButton {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EDBC64;
+    font-size: 18px;
+    line-height: 21.94px;
+    font-weight: 400;
+    width: 96px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 4px;
+    margin-top: 13px;
+    margin-right: 37px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#userPostBox {
+    margin-top: 22px;
+    margin-bottom: 35px;
+    width: 600px;
+    height: 95px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    background-color: white;
+}
+
+#messageBox {
+    padding: 16px 0 0 17px;
+    width: 558px;
+    height: 95px;
+}
+
+#messageBox:focus {
+    outline:none
+}
+
+#messageBox:empty::before {
+    content:attr(data-placeholder);
+    color:gray;
+}
+
+#plusSign {
+    background: #EDBC64;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+    height: 25px;
+    width: 25px;
+    margin-right: 17px;
+    margin-top: 58px;
+    cursor: pointer;
+}
+
+#postsHolder {
+    max-width: 600px;
+}
+
+.cardPost {
+    width: 599px;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-bottom: 6px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.cardPostPicture {
+    margin-right: 30px;
+    padding: 15px 0 0 20px;
+}
+
+.cardPostPicture > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+.cardPostContent {
+    width: 374px;
+}
+
+.cardPostOwner {
+    margin-top: 13px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.cardPostMessage {
+    font-weight: 400;
+    font-size: 16px;
+    color: #5F5C5C;
+}
+
+.cardPostMessage, .cardPostOwner {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cardPostMessage:focus {
+    outline: none
+}
+
+.cardPostDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin: 0 29px 16px 29px;
+}
+
+.editPostSection {
+    font-family: 'Montserrat', sans-serif;
+    color: #6495ED;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.deletePostSection {
+    font-family: 'Montserrat', sans-serif;
+    color: #ED6464;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.datePostOwner {
+    font-family: 'Montserrat', sans-serif;
+    color: #989898
+}
+
+.datePostStranger {
+    font-family: 'Montserrat', sans-serif;
+    color: #989898
+}
+
+.navButton {
+    margin: 20px 7.5px 20px 7.5px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EDBC64;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    height: 30px;
+    cursor: pointer;
+}
