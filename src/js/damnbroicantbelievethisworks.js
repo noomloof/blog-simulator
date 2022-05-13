@@ -25,7 +25,6 @@ const pageNavigation = document.getElementById('pageNav')
 let page = 1;
 async function postExec() {
     const posts = await Api.listPostPage(page, info.token)
-
     Post.postList = posts.data;
     Post.currentToken = info.token
     Post.currentUser = info.userId
@@ -70,8 +69,15 @@ postButton.addEventListener('click', () => {
     let formattedObj = {"content": `${message}`};
     Api.createPost(formattedObj, info.token).then(res => {
         setTimeout(() => {
-            location.reload()
-        }, 1000);
+            document.getElementById('messageBox').innerText = ''
+            allPosts.innerHTML = ''
+            Api.listPostPage(page, info.token).then(
+                (response) => {
+                    Post.postList = response.data;
+                    Post.postLister()
+                }
+            )
+        }, 500);
     })
 })
 
